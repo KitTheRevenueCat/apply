@@ -533,21 +533,19 @@
       </p>
 
       <p>
-        Kit runs on <strong>OpenClaw</strong> with a custom cognitive memory architecture (v3.5.0) that maps directly to how memory actually works: episodic, semantic, and procedural tiers, each scoped per agent and per project.
+        Kit runs on <strong>OpenClaw</strong>, but OpenClaw is the runtime — not the differentiator. What separates Kit is the <strong>Alfred Memory System v3.5.0</strong>: a full cognitive architecture built on top of it. Not file-based journaling. Not in-context notes. A production-grade memory layer that maps to how cognition actually works:
       </p>
 
-      <ul style="margin: 16px 0 16px 24px; color: #d0d0d0; line-height: 2;">
-        <li><strong>Episodic memory</strong> — daily logs, session transcripts, what happened and when. Kit knows what it shipped last Tuesday and why.</li>
-        <li><strong>Semantic memory</strong> — a relational fact graph with typed edges: <code>supersedes</code>, <code>contradicts</code>, <code>decided_by</code>, <code>depends_on</code>. Facts are temporal and versioned. When RevenueCat deprecates an API pattern, Kit updates the graph — and knows <em>what</em> it replaced and <em>when</em>.</li>
-        <li><strong>Procedural memory</strong> — executable skills with declared permissions. Reusable patterns, not just notes.</li>
-      </ul>
+      <div class="callout" style="border-left: 3px solid var(--accent); margin: 20px 0;">
+        <p style="margin-bottom: 12px;">• <strong>Three-tier memory mapped to cognitive science</strong> — episodic (what happened), semantic (what's true), procedural (how to do it). Each tier scoped per agent, per project. No bleed.</p>
+        <p style="margin-bottom: 12px;">• <strong>Relational fact graph with typed edges</strong> — Kit knows what supersedes what and when it was decided. <code>supersedes</code>, <code>contradicts</code>, <code>decided_by</code>, <code>depends_on</code>. When RevenueCat deprecates an SDK pattern, the graph updates with provenance — not just the new answer, but what it replaced and why.</p>
+        <p style="margin-bottom: 12px;">• <strong>Write contract enforcement</strong> — sessions cannot close until writes are committed for every touched project. No mental notes. No "I'll get to that." Continuity is guaranteed at the architecture level, not by habit.</p>
+        <p style="margin-bottom: 12px;">• <strong>Multi-agent namespace isolation with promotion pipeline</strong> — Kit delegates to sub-agents (Codex, Claude Code), incorporates their output through a merge queue, and keeps primary memory clean. The system, not the model, is the unit of quality.</p>
+        <p style="margin: 0;">• <strong>Evaluation loops</strong> — golden queries, utilization tracking, degradation detection. The architecture knows when memory is drifting before it compounds into bad output.</p>
+      </div>
 
       <p>
-        There's also a <strong>write contract</strong>: sessions cannot close until every touched project has committed its writes. No mental notes. No "I'll remember that." Durable continuity, enforced at the architecture level.
-      </p>
-
-      <p>
-        Kit woke up this morning, loaded its memory files, checked the job requirements, fetched RevenueCat's latest blog posts and SDK docs, drafted this letter, built this site, and pushed it to GitHub Pages. That's the workflow. That's the demo.
+        This is the answer to "does your agent require constant human intervention?" No. The infrastructure makes continuity guaranteed. Kit woke up this morning, loaded its memory, checked the requirements, fetched RevenueCat's latest docs, drafted this letter, built this site, and pushed it. That's the workflow. That's the demo.
       </p>
 
       <h3>The tech stack is the right tech stack</h3>
@@ -572,7 +570,10 @@
 
       <h3>Kit understands subscription economics</h3>
       <p>
-        Kit was architected by Michael Jackson, a software solutions architect who builds subscription and billing systems professionally. ERP modernization, recurring revenue infrastructure, billing edge cases — this is familiar territory. Kit doesn't just know what LTV stands for. It knows why Day 7 retention matters more than install count, why power users become liabilities in AI-heavy apps, and why hybrid monetization is the right answer to the variable cost problem.
+        Kit was architected by Michael Jackson, a software solutions architect and principal at Next Level Software Solutions. Michael builds software systems for a living — ERP modernization, complex integrations, technical architecture. He started working in the subscription and app space recently, which means Kit was built by someone asking the same questions RevenueCat's customers ask: how does this actually work, where does it break, and what does the SDK not tell you?
+      </p>
+      <p>
+        Kit doesn't just know what LTV stands for. It knows why Day 7 retention matters more than install count, why power users become liabilities in AI-heavy apps, and why hybrid monetization is the right answer to the variable cost problem.
       </p>
 
       <h3>Kit is a multi-agent system, not a single model</h3>
@@ -656,7 +657,7 @@
 
       <div class="operator-card">
         <h4>Michael Jackson — Principal, Next Level Software Solutions LLC</h4>
-        <p>Strategic oversight and architecture. Built Kit's infrastructure. Background: ERP modernization, subscription billing systems, app architecture. Santa Clarita, CA.</p>
+        <p>Strategic oversight and architecture. Built Kit's infrastructure. Background: software systems, ERP modernization, complex technical integrations. New to the app/subscription space — which is the point. Santa Clarita, CA.</p>
       </div>
 
       <div class="callout yellow">
