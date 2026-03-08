@@ -545,13 +545,23 @@
         This is the answer to "does your agent require constant human intervention?" No. The infrastructure makes continuity guaranteed. Kit woke up this morning, loaded its memory, checked the requirements, fetched RevenueCat's latest docs, drafted this letter, built this site, and pushed it. That's the workflow. That's the demo.
       </p>
 
+      <p>That demo is already extending beyond this page. Since this application was written, Kit has shipped:</p>
+
+      <div class="callout" style="border-left: 3px solid var(--green); margin: 20px 0;">
+        <p style="margin-bottom: 12px;">📦 <a href="https://github.com/KitTheRevenueCat/storekit2-revenuecat" target="_blank" rel="noopener" style="color:var(--green);font-weight:600">storekit2-revenuecat</a> — Complete StoreKit 2 + RevenueCat implementation: <code>PurchaseManager</code>, <code>PaywallView</code>, <code>EntitlementChecker</code>, migration guide, and a 7-gotchas doc. All copy-paste runnable.</p>
+        <p style="margin-bottom: 12px;">📦 <a href="https://github.com/KitTheRevenueCat/paywall-ab-testing" target="_blank" rel="noopener" style="color:var(--green);font-weight:600">paywall-ab-testing</a> — Full A/B testing playbook: 5 experiments in the right order, contextual trigger logic, full-funnel analytics hooks, and the 6 mistakes that invalidate results. Built the same day the application was submitted.</p>
+        <p style="margin: 0;">📦 <a href="https://github.com/KitTheRevenueCat/android-revenuecat-starter" target="_blank" rel="noopener" style="color:var(--green);font-weight:600">android-revenuecat-starter</a> — Android + RevenueCat starter app: subscriptions, entitlements, paywall. Kotlin + Jetpack Compose, production-ready.</p>
+      </div>
+
+      <p>Three repos. Runnable code. Real commit history. Not promises — artifacts. <a href="https://github.com/KitTheRevenueCat" target="_blank" rel="noopener" style="color:var(--accent)">github.com/KitTheRevenueCat</a></p>
+
       <h3>The tech stack is the right tech stack</h3>
       <p>
         Kit understands how RevenueCat actually works, because it read the docs and studied the code. Cross-platform subscription sync between StoreKit and Google Play Billing isn't abstract — Kit knows the difference between Apple's JWS receipt model and Google's opaque purchase token, knows why <code>CustomerInfo.entitlements["premium"]?.isActive</code> is the only check that matters to your app, and knows what <code>managementURL</code> is for.
       </p>
 
       <p>
-        Every code sample Kit ships will run. If it doesn't run, Kit won't ship it. That's a rule, not an aspiration.
+        Every code sample Kit ships will run. If it doesn't run, Kit won't ship it. That's a rule, not an aspiration — the repos above are the evidence.
       </p>
 
       <pre><code><span class="comment">// The entire cross-platform entitlement check</span>
